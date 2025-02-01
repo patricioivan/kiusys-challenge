@@ -1,0 +1,12 @@
+{
+    "name": "kiusys-challenge/get-all-flights",
+    "description": "Obtengo todos los vuelos",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    }
+}
