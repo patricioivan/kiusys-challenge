@@ -1,0 +1,12 @@
+{
+    "name": "kiusys-challenge/flight-search",
+    "description": "Servicio de busqueda de vuelos",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    }
+}
