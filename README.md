@@ -1,7 +1,23 @@
 # kiusys-challenge
-Iniciar el proyecto donde esta la API que trae TODOS los vuelos composer dump-autoload php -S localhost:8006 -t public
+1)
 
-Iniciar el proyecto de busqueda de vuelos composer dump-autoload php -S localhost:8005 -t public
+Iniciar el proyecto donde esta la API que trae TODOS los vuelos (test_kyusis_all_flights)
+composer dump-autoload 
+php -S localhost:8006 -t public
+
+
+2)
+
+Iniciar el proyecto de busqueda de vuelos (test_kyusis)
+composer dump-autoload 
+php -S localhost:8005 -t public
+
+La razón de por que hice dos proyectos es para que no de error por ser monohilo
+Asi el proyecto test_kiusys puede pegarle al endpoint de test_kiusys_all_flights para obtener el example de todos los vuelos, y no le tenga que pegarle internamente)
+Otra alternativa que tenia era hacer un fixture en el mismo proyecto y obtener los datos, pero queria que sea lo mas "real" posible.
+
+
+3)
 
 Via postman o navegador pegarle a http://localhost:8005/journeys/search?date=2024-09-12&from=BUE&to=MAD
 
